@@ -15,11 +15,10 @@ fi
 tmux new-session -d -s ${session_name}
 
 svc_array=(
-  "github"
   "amap"
+  "cloudflare"
+  "github"
 )
-
-tmux new-window -t ${session_name} -n "default"
 
 for svc in "${svc_array[@]}"; do
   tmux new-window -t ${session_name} -n "${svc}" -c "${project_root}/servers/" "bash ${svc}.sh ; read"

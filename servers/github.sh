@@ -2,4 +2,4 @@
 
 npx -y supergateway \
   --stdio "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN=${GITHUB_PERSONAL_ACCESS_TOKEN} ghcr.io/github/github-mcp-server" \
-  --port 8124 --ssePath /sse --messagePath /message
+  --port 8125 --ssePath /sse --messagePath /message
